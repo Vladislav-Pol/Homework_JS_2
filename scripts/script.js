@@ -13,18 +13,18 @@ console.log("\n--- Задание 2 ---");
 let year = 2021 - age;
 console.log(name + " родился в " + year + " году.");
 
-// console.log("\n--- Задание 3 ---");
-// let _number = 153450;
-// let _n1 = parseInt(_number / 100000)*100000;
-// let _n2 = parseInt(_number / 10000)*10000;
-// let _n3 = parseInt(_number / 1000)*1000;
-// let _n4 = parseInt(_number / 100)*100;
-// let _n5 = parseInt(_number / 10)*10;
-// let _n6 = parseInt(_number);
-// let left = (_n1 + _n2 + _n3);
-// let right = (_n4 + _n5 + _n6);
-// console.log(left, right);
-// console.log(left === right ? "да" : "нет");
+console.log("\n--- Задание 3 ---");
+let _number = 153450;
+let _n1 = parseInt(_number / 100000);
+let _n2 = parseInt(_number / 10000) - _n1 * 10;
+let _n3 = parseInt(_number / 1000) - (_n1 * 10 + _n2) *10;
+let _n4 = parseInt(_number / 100) - (_n1 * 100 + _n2 * 10 + _n3) * 10;
+let _n5 = parseInt(_number / 10) - (_n1 * 1000 + _n2 * 100 + _n3 * 10 + _n4) * 10;
+let _n6 = parseInt(_number) - (_n1 * 10000 + _n2 * 1000 + _n3 * 100 + _n4 * 10 + _n5) * 10;
+let left = (_n1 + _n2 + _n3);
+let right = (_n4 + _n5 + _n6);
+//sconsole.log(left, right);
+console.log(left === right ? "да" : "нет");
 
 
 console.log("\n--- Задание 4 ---");
